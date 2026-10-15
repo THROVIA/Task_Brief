@@ -101,7 +101,8 @@ Follow [Brenda Shi on X](https://x.com/brenda_50555) for human–AI collaboratio
 
 <img src="assets/throvia-lockup.svg" alt="未见之地 · THROVIA" width="200">
 
-Created by **Brenda Shi · THROVIA**. Published by **上海未见之地科技有限公司**.
+Created by **Brenda Shi · THROVIA**. 
+Published by **上海未见之地科技有限公司**.
 
 AI-assisted preparation; human-directed design and release decisions.
 
