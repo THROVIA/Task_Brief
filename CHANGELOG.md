@@ -33,3 +33,12 @@ This date records the packaging revision, not a GitHub release event. The skill 
 - Preserved the skill instructions and MIT license. The skill version remains 1.0.0.
 
 文档修订 R2：新增品牌横幅与署名，拆分中英文说明，前移安装入口及使用示例；技能正文、许可证和技能版本保持不变。
+
+### Documentation revision R3 — 2026-10-15
+
+- Added an approved, anonymized historical project example before installation in both READMEs.
+- Updated navigation to point to the real example, while retaining the illustrative signup-page walkthrough.
+- Identified the example as a condensed account of K14 used alongside other collaboration rules, not an independent test of the current release.
+- Preserved the skill instructions, license, and version 1.0.0.
+
+文档修订 R3：中英文首页新增经确认的历史项目脱敏案例，明确多规则共同使用及改写边界；技能正文、许可证和版本不变。

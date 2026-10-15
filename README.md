@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="#quick-start">Quick start</a> &nbsp;·&nbsp;
-  <a href="#in-practice">Usage example</a> &nbsp;·&nbsp;
+  <a href="#a-real-project-example">Real example</a> &nbsp;·&nbsp;
   <a href="#how-it-works">How it works</a> &nbsp;·&nbsp;
   <a href="README.zh-CN.md">简体中文</a>
 </p>
@@ -17,6 +17,24 @@ An agent skill for aligning with AI before complex work.</p>
 AI can start producing an answer before you have agreed on what to solve. Task Brief helps you clarify intent, surface overlooked questions and disagreements, and agree on the deliverable before planning, writing, analysis, or development.
 
 **Simple tasks stay simple. Already aligned work moves forward.** A brief records the agreement; filling out a template is not the goal.
+
+## A real project example
+
+**Record the relationships before drawing the diagram**
+
+I was updating a file-management workflow. The timeline and relationship diagrams in an earlier version were easy to understand, and I wanted to preserve those strengths in the next version.
+
+Before editing, the AI raised a point worth discussing:
+
+**The diagrams worked because they showed where files came from, which files replaced others, and what depended on what.**
+
+Alongside deciding how to draw the diagrams, it suggested adding an “upstream / replacement relationships” field to the file register, so those relationships would be explicitly recorded.
+
+I agreed with that reasoning and accepted the proposed field.
+
+**What changed through clarification:** “Keep the useful diagrams” became a more concrete requirement: “Record the relationships those diagrams convey.”
+
+*Adapted and anonymized from the author's real project conversation in August 2026. The original used K14, an internal task-clarification protocol, alongside other collaboration rules. This is a condensed retelling, not a verbatim transcript or an independent test of the current open-source release.*
 
 ## Quick start
 
