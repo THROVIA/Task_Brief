@@ -9,14 +9,22 @@
   <a href="README.md">English</a>
 </p>
 
-<p align="center"><strong>说清目标 · 明确边界 · 确认交付</strong><br>
-Task Brief · 开工前对齐：帮助你与 AI 在复杂任务开始前，先把问题说清楚。</p>
+<p align="center"><strong>AI 已经准备开工，你们说的是同一件事吗？</strong><br>
+Task Brief · 开工前对齐：复杂任务开始前的需求澄清 Skill。</p>
 
 ---
 
-你还没说清要解决什么，AI 就开始写方案、做页面，结果方向不对，又要返工。Task Brief 帮你核清意图、对象、边界、交付要求和完成标准，发现遗漏、挑明分歧，再确定下一步。
+你还没说清要解决什么，AI 就开始写方案、做页面，结果方向不对，又要返工。**当目标还模糊、要求互相冲突，或需求变化后需要重新明确边界时，调用 Task Brief。**
+
+下方提供 **Claude Code** 的安装与调用方式。技能关注任务本身的澄清，也适用于不涉及代码的工作。
 
 适合规划、分析、写作、资料编纂和开发。**简单任务直接处理，已对齐的工作继续推进。** 简报记录对齐结果，填表本身不是目标。
+
+## 为什么不只说一句“先对齐”？
+
+对简单任务，这句话可能已经足够。Task Brief 把更具体的规则封装起来：检查遗漏、挑明要求之间的冲突，并沿用当前对话中已经确认的决定。
+
+目标是在尊重已有决定的基础上，让下一步更明确。这些是技能的设计要求；下面的历史案例展示了一项具体建议，以及作者的回应。
 
 ## 真实项目案例
 
@@ -49,6 +57,26 @@ npx skills add THROVIA/Task_Brief --skill task-brief -a claude-code
 ```text
 /task-brief 我想做一个志愿者活动报名页，帮我先理清需求，先别写代码。我还没决定报名是否需要审核。
 ```
+
+**第一次怎样算有帮助？**
+
+看它是否补出一个遗漏的决定、说明一项取舍，或让下一步更明确；也看它是否沿用了你已经提供的信息。如果只是复述任务、重复问已确定的问题，这同样值得[提交反馈](https://github.com/THROVIA/Task_Brief/issues)。
+
+<details>
+<summary><strong>换成你自己正在做的任务</strong></summary>
+
+把方括号替换成你的任务和已有决定：
+
+```text
+/task-brief 我准备做[具体任务]。
+已经确定：[已有决定与限制]。
+还没确定：[目前的疑问]。
+这轮先帮我明确需求和下一步，不开始执行。
+```
+
+这是试用模板，不是已完成的案例，也不要求固定的回复格式。
+
+</details>
 
 <details>
 <summary><strong>也可以手动安装</strong></summary>
@@ -109,11 +137,13 @@ npx skills add THROVIA/Task_Brief --skill task-brief -a claude-code
 | [LICENSE](LICENSE) | MIT 许可证 |
 | [assets/](assets/) | README 视觉素材与 THROVIA 品牌资产 |
 
-## 反馈
+## 收藏、反馈与关注
 
-欢迎[提交 Issue](https://github.com/THROVIA/Task_Brief/issues)：描述任务、实际回复，以及哪些地方有帮助或增加了负担；附上所用客户端、模型与调用方式。分享前请去掉私人信息。
+- **收藏工具。** 如果希望以后方便找到它，可以给仓库点亮 Star。
+- **反馈实际使用。** 它发现了什么，又重复问了哪些不必要的问题？欢迎[提交 Issue](https://github.com/THROVIA/Task_Brief/issues)，附一小段脱敏对话、所用客户端和模型、调用方式，以及下一步因此发生的变化。如果在另一个任务中再次使用了，也请说说原因；不再使用的原因同样有价值。
+- **关注项目背后的思考。** 关注 [Brenda Shi 的 X](https://x.com/brenda_50555)，交流人机协作与产品实践。Task Brief 是 THROVIA 的开源项目。
 
-关注 [Brenda Shi 的 X](https://x.com/brenda_50555)，交流人机协作与产品实践。如果 Task Brief 对你有帮助，也欢迎点亮 Star。
+有值得分享的片段时，可以保留“原始请求 → 关键回复 → 随后的决定”。分享前去掉私人信息，标明删改或转述，并让效果描述与记录能够支持的事实一致。
 
 ---
 

@@ -42,3 +42,13 @@ This date records the packaging revision, not a GitHub release event. The skill 
 - Preserved the skill instructions, license, and version 1.0.0.
 
 文档修订 R3：中英文首页新增经确认的历史项目脱敏案例，明确多规则共同使用及改写边界；技能正文、许可证和版本不变。
+
+### Documentation revision R4 — 2026-10-15
+
+- Clarified when to use the skill in both README introductions.
+- Explained the intended value beyond a one-line clarification prompt, without claiming comparative performance.
+- Added first-use evaluation guidance and an optional prompt for the reader's own task.
+- Separated repository bookmarking, usage feedback, and author/brand follow-up.
+- Preserved the approved historical case, brand artwork, skill instructions, license, and version 1.0.0.
+
+文档修订 R4：补齐使用时机、差异化说明、首次试用判断标准和分开的收藏／使用反馈／作者关注入口，中英文同步；保留已确认案例、视觉、技能正文及许可证。

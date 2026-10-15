@@ -9,14 +9,22 @@
   <a href="README.zh-CN.md">简体中文</a>
 </p>
 
-<p align="center"><strong>Clear goals. Defined scope. Shared success criteria.</strong><br>
-An agent skill for aligning with AI before complex work.</p>
+<p align="center"><strong>AI is ready to start. Is the task clear?</strong><br>
+An agent skill for task clarification before complex work.</p>
 
 ---
 
-AI can start producing an answer before you have agreed on what to solve. Task Brief helps you clarify intent, surface overlooked questions and disagreements, and agree on the deliverable before planning, writing, analysis, or development.
+Use Task Brief when the goal is still fuzzy, requirements conflict, or a change needs clarification before work continues. It is designed to help you and AI agree on the work before planning, writing, analysis, or development.
+
+The quick start below uses **Claude Code**. The skill focuses on clarifying the task, including work that does not involve coding.
 
 **Simple tasks stay simple. Already aligned work moves forward.** A brief records the agreement; filling out a template is not the goal.
+
+## Why use a skill instead of saying “clarify first”?
+
+For a straightforward task, that instruction may be enough. Task Brief packages more specific rules: check for omissions, make conflicting requirements explicit, and reuse decisions already established in the conversation.
+
+The aim is to make the next action clearer while respecting what you have already decided. These are intended behaviors; the historical example below shows one concrete suggestion and the author's response.
 
 ## A real project example
 
@@ -49,6 +57,26 @@ Follow the installer prompts, then try:
 ```text
 /task-brief Before coding, help me clarify the requirements for a volunteer signup page. I have not decided whether applications need approval.
 ```
+
+**What should a useful first run do?**
+
+Look for a missing decision, a clearer trade-off, or a more concrete next step. Check whether it reuses details you already provided. If it only restates your request or repeats settled questions, that is useful feedback too—[share what happened](https://github.com/THROVIA/Task_Brief/issues).
+
+<details>
+<summary><strong>Try it on a task you already have</strong></summary>
+
+Replace the brackets with your own task and decisions:
+
+```text
+/task-brief I am preparing to [specific task].
+Already decided: [decisions and constraints].
+Still unclear: [open questions].
+Help me clarify the requirements and next step. Do not start executing yet.
+```
+
+This is a starting prompt, not a completed case or a fixed output format.
+
+</details>
 
 <details>
 <summary><strong>Prefer a manual installation?</strong></summary>
@@ -109,11 +137,13 @@ The repository root is the skill directory.
 | [LICENSE](LICENSE) | MIT license |
 | [assets/](assets/) | README artwork and THROVIA brand assets |
 
-## Feedback
+## Save, share feedback, or follow
 
-[Open an issue](https://github.com/THROVIA/Task_Brief/issues) with your task, the response, and what helped or added friction. Include the client/model and how you invoked the skill. Remove private information before sharing.
+- **Keep the skill handy.** Star this repository if you want to find it again.
+- **Tell us what happened when you used it.** What did it catch—or ask again unnecessarily? [Open an issue](https://github.com/THROVIA/Task_Brief/issues) with a short, anonymized excerpt. Include the client/model, how you invoked the skill, and what changed in your next step. If you used it again on another task, tell us why; if you stopped using it, that is useful too.
+- **Follow the thinking behind Task Brief.** Follow [Brenda Shi on X](https://x.com/brenda_50555) for human–AI collaboration and product practice. Task Brief is a THROVIA project.
 
-Follow [Brenda Shi on X](https://x.com/brenda_50555) for human–AI collaboration and product practice. If Task Brief helps your work, a star helps others discover it.
+Found a useful moment worth sharing? Include the original request, the key response, and the decision that followed. Remove private information and label edits or paraphrases; keep claims tied to what the conversation actually shows.
 
 ---
 
