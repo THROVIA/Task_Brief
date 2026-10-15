@@ -1,7 +1,7 @@
 # Task Brief · 开工前对齐
 
 **Clarify the problem before starting complex work.**  
-**复杂任务开工前，先把问题说清，再动手。**
+
 
 [English](#english) · [中文](#中文) · [MIT License](LICENSE)
 
