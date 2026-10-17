@@ -52,3 +52,17 @@ This date records the packaging revision, not a GitHub release event. The skill 
 - Preserved the approved historical case, brand artwork, skill instructions, license, and version 1.0.0.
 
 文档修订 R4：补齐使用时机、差异化说明、首次试用判断标准和分开的收藏／使用反馈／作者关注入口，中英文同步；保留已确认案例、视觉、技能正文及许可证。
+
+### Documentation revision R5 — 2026-10-17
+
+- Clarified cross-tool positioning and non-coding use cases.
+- Added separate Codex and Claude Code setup and invocation instructions.
+- Moved quick start ahead of the historical project story.
+- Added writing and analysis input examples; retained the development example.
+- Updated public copy to emphasize gaps, disagreements, and the next step.
+- Updated the README banner to “Align before you start”.
+- Skill instructions and license unchanged; skill version remains 1.0.0.
+
+文档修订 R5：明确跨工具定位，补齐 Codex 与 Claude Code 的安装和调用入口；前置入职指南示例，增补分析场景，历史案例后移并作为方法来源；同步首页文案与横幅。技能正文、许可证和技能版本保持不变。
+
+This date records preparation of the documentation revision, not a GitHub release event.

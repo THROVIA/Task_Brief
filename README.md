@@ -1,131 +1,140 @@
 <p align="center">
-  <img src="assets/task-brief-header.svg" alt="Task Brief — Align before you build. An open-source agent skill by THROVIA." width="100%">
+  <img src="assets/task-brief-header.svg" alt="Task Brief — Clarify what needs solving before complex work begins" width="100%">
 </p>
 
 <p align="center">
-  <a href="#quick-start">Quick start</a> &nbsp;·&nbsp;
-  <a href="#a-real-project-example">Real example</a> &nbsp;·&nbsp;
-  <a href="#how-it-works">How it works</a> &nbsp;·&nbsp;
+  <a href="#quick-start">Quick start</a> ·
+  <a href="#more-ways-to-use-it">More examples</a> ·
+  <a href="#why-task-brief">Why Task Brief</a> ·
   <a href="README.zh-CN.md">简体中文</a>
 </p>
 
-<p align="center"><strong>AI is ready to start. Is the task clear?</strong><br>
-An agent skill for task clarification before complex work.</p>
+# Task Brief — Align before you start
 
----
+**AI is ready to start. Are you solving the same problem?**
 
-Use Task Brief when the goal is still fuzzy, requirements conflict, or a change needs clarification before work continues. It is designed to help you and AI agree on the work before planning, writing, analysis, or development.
+Task Brief is an open-source agent skill that helps you and AI uncover gaps, surface disagreements, and agree on scope, deliverables, and the next step. It reuses decisions already established in the current conversation.
 
-The quick start below uses **Claude Code**. The skill focuses on clarifying the task, including work that does not involve coding.
+Use it for planning, writing, analysis, document organization, or development, with **Codex, Claude Code, and other tools that support Agent Skills**.
 
 **Simple tasks stay simple. Already aligned work moves forward.** A brief records the agreement; filling out a template is not the goal.
 
-## Why use a skill instead of saying “clarify first”?
-
-For a straightforward task, that instruction may be enough. Task Brief packages more specific rules: check for omissions, make conflicting requirements explicit, and reuse decisions already established in the conversation.
-
-The aim is to make the next action clearer while respecting what you have already decided. These are intended behaviors; the historical example below shows one concrete suggestion and the author's response.
-
-## A real project example
-
-**Record the relationships before drawing the diagram**
-
-I was updating a file-management workflow. The timeline and relationship diagrams in an earlier version were easy to understand, and I wanted to preserve those strengths in the next version.
-
-Before editing, the AI raised a point worth discussing:
-
-**The diagrams worked because they showed where files came from, which files replaced others, and what depended on what.**
-
-Alongside deciding how to draw the diagrams, it suggested adding an “upstream / replacement relationships” field to the file register, so those relationships would be explicitly recorded.
-
-I agreed with that reasoning and accepted the proposed field.
-
-**What changed through clarification:** “Keep the useful diagrams” became a more concrete requirement: “Record the relationships those diagrams convey.”
-
-*Adapted and anonymized from the author's real project conversation in August 2026. The original used K14, an internal task-clarification protocol, alongside other collaboration rules. This is a condensed retelling, not a verbatim transcript or an independent test of the current open-source release.*
-
 ## Quick start
 
-Install for **Claude Code** with Node.js and npm available:
+Choose your tool below. These instructions cover local installation and require the corresponding client. The CLI installer also requires Node.js and npm. Without Node.js, use the manual installation option below.
+
+### Codex
+
+Run this in your terminal to install for personal use:
 
 ```sh
-npx skills add THROVIA/Task_Brief --skill task-brief -a claude-code
+npx skills add THROVIA/Task_Brief --skill task-brief -a codex -g
 ```
 
-Follow the installer prompts, then try:
+Follow the installer prompts. Then enter this in the **chat input** of Codex CLI or the IDE extension. You can also select `task-brief` through `/skills`:
 
 ```text
-/task-brief Before coding, help me clarify the requirements for a volunteer signup page. I have not decided whether applications need approval.
+$task-brief I am preparing a new employee onboarding guide.
+Already decided: it is for people joining the team for the first time, and must fit within two pages.
+Help me uncover gaps, clarify scope and deliverables, and agree on the next step. Do not draft the guide yet.
 ```
 
-**What should a useful first run do?**
+### Claude Code
 
-Look for a missing decision, a clearer trade-off, or a more concrete next step. Check whether it reuses details you already provided. If it only restates your request or repeats settled questions, that is useful feedback too—[share what happened](https://github.com/THROVIA/Task_Brief/issues).
+Run this in your terminal to install for personal use:
+
+```sh
+npx skills add THROVIA/Task_Brief --skill task-brief -a claude-code -g
+```
+
+Follow the installer prompts. Then enter this in the **Claude Code chat input**:
+
+```text
+/task-brief I am preparing a new employee onboarding guide.
+Already decided: it is for people joining the team for the first time, and must fit within two pages.
+Help me uncover gaps, clarify scope and deliverables, and agree on the next step. Do not draft the guide yet.
+```
+
+For a project-only installation, run the command from that project and omit `-g`.
+
+### What makes a useful first run?
+
+Look for a consequential gap, a conflict or trade-off made explicit, or a clearer next step. Check whether it reuses details you already provided.
+
+If it only restates your request or repeats settled questions, that is useful feedback too—[share what happened](https://github.com/THROVIA/Task_Brief/issues). The prompts above are examples of what to ask, not recorded results.
 
 <details>
-<summary><strong>Try it on a task you already have</strong></summary>
+<summary><strong>Manual installation</strong></summary>
 
-Replace the brackets with your own task and decisions:
+1. Choose **Code → Download ZIP** on this repository and extract it.
+2. Name the folder directly containing `SKILL.md` as `task-brief`.
+3. Put that folder in one of the following locations:
 
-```text
-/task-brief I am preparing to [specific task].
-Already decided: [decisions and constraints].
-Still unclear: [open questions].
-Help me clarify the requirements and next step. Do not start executing yet.
-```
+| Tool | Personal, across projects | Current project only |
+| :--- | :--- | :--- |
+| Codex | `~/.agents/skills/task-brief/` | `.agents/skills/task-brief/` |
+| Claude Code | `~/.claude/skills/task-brief/` | `.claude/skills/task-brief/` |
 
-This is a starting prompt, not a completed case or a fixed output format.
+The selected directory should contain `SKILL.md` directly, without an extra nested `task-brief` folder. `~` means your home directory. Reopen the corresponding client and use the invocation shown above.
 
 </details>
 
 <details>
-<summary><strong>Prefer a manual installation?</strong></summary>
+<summary><strong>Other Agent Skills tools, or using the instructions manually</strong></summary>
 
-1. Download this repository using **Code → Download ZIP** and extract it.
-2. Rename the extracted folder containing `SKILL.md` to `task-brief` if needed.
-3. Copy that folder into your project's `.claude/skills/` directory. The skill entry point should be `.claude/skills/task-brief/SKILL.md`.
-4. Open Claude Code in the project and use the prompt above.
+For another tool that supports Agent Skills, follow its instructions for importing the directory containing `SKILL.md` and invoking the skill.
 
-For personal use across projects, place the folder in `~/.claude/skills/task-brief/` instead. Choose one installation location.
+In an ordinary AI chat, you can copy the instruction body from [SKILL.md](SKILL.md) into a new conversation and explicitly ask the assistant to follow it for your next task. This supplies instructions manually rather than installing a native skill; loading and behavior depend on the tool and model.
 
 </details>
 
-[Skills CLI documentation](https://github.com/vercel-labs/skills) · [Claude Code skill setup](https://code.claude.com/docs/en/skills)
+[Skills CLI documentation](https://github.com/vercel-labs/skills) · [Codex skills](https://learn.chatgpt.com/docs/build-skills) · [Claude Code skills](https://code.claude.com/docs/en/skills)
 
-## In practice
+## More ways to use it
 
-**You bring an idea:** “I need a volunteer signup page.”
+After selecting `task-brief`, use either request below as your task. When typing the invocation manually, use `$task-brief` in Codex or `/task-brief` in Claude Code.
 
-**Task Brief helps make it actionable:**
+**Analysis:**
 
-| Before starting | What to clarify |
-| :--- | :--- |
-| Purpose | Who is signing up, and for which activity? |
-| Scope | Is this just a signup page, or also an approval workflow? |
-| Deliverable | Do you need a requirements brief, a prototype, or working code? |
-| Success criteria | What observable result would make the work complete? |
-| Open decisions | Do applications need approval, and who decides? |
+```text
+I want to understand why customer inquiries have declined recently.
+I have three months of inquiry records, but some source labels are missing.
+Help me define what to analyze, which questions the data can answer, and what information is missing. Agree on the next step before drawing conclusions.
+```
 
-*Illustrative example, not a fixed response or a completed decision.*
+**Development:**
 
-If you asked to clarify before coding, implementation waits. The outcome is a shared working definition with unresolved decisions visible. A confirmed definition and permission to execute are assessed separately.
+```text
+I want to build a volunteer signup page.
+Already decided: no fees, and a maximum of 30 participants. I have not decided whether applications need approval.
+Help me clarify the requirements, key trade-offs, and next step before writing code.
+```
 
-## How it works
+You can also bring a project you are planning, a document you need to write, or materials you are organizing. Share the constraints you already know; you do not need to resolve every question first. These are input examples, with no predetermined output.
 
-Six checks guide the conversation. They do not require six rounds of questions.
+## Why Task Brief?
 
-1. **Understand the intent.** Restate the task and purpose; check for omissions.
-2. **Define the work.** Clarify the subject, scope, and deliverable.
-3. **Check progress.** Resolve consequential gaps and obtain necessary confirmation.
-4. **Surface disagreements.** Make incompatible requirements explicit.
-5. **Establish the definition.** Clarify execution authorization and make changes visible.
-6. **Conclude alignment.** Within four rounds for the same definition, retain unresolved matters and establish the next step.
+**Surface what's unclear. Build on what's agreed.**
 
-Existing information and authorization are reused. Clear single-step actions are handled directly. The response follows your language.
+For a simple task, saying “clarify first” may be enough. Task Brief makes the collaboration rules reusable: check for omissions, define the subject, scope, deliverables, and completion criteria, surface incompatible requirements, and reuse information and authorization already established in the current conversation.
 
-Read the full [skill instructions](SKILL.md).
+It also limits the clarification process. Simple tasks skip the full workflow, aligned tasks focus on changes, and the same task definition has a maximum of four alignment rounds. At the limit, unresolved matters and the next step remain explicit; reaching the limit does not resolve them.
 
-## Project guide
+A confirmed task definition and permission to execute are assessed separately. Existing authorization is carried forward; if you ask only to discuss, the work stays within that scope.
+
+Read the full six-step [skill instructions](SKILL.md).
+
+## Where this comes from: a historical project conversation
+
+**From “keep the useful diagrams” to “record the relationships they convey.”**
+
+I was updating a file-management workflow and wanted to preserve the clear timelines and relationship diagrams from an earlier version. During the discussion, the AI pointed out that the diagrams worked because they showed where files came from, which files replaced others, and what depended on what. It suggested adding an “upstream / replacement relationships” field to the file register, alongside deciding how to draw the diagrams.
+
+I agreed with that reasoning and accepted the proposed field. The next change to make became more concrete.
+
+*Adapted and anonymized from the author's real conversation in August 2026, which used earlier clarification rules alongside other collaboration instructions. This explains the approach's origins; it is not a recorded run of the current release.*
+
+## Project files
 
 The repository root is the skill directory.
 
@@ -133,17 +142,15 @@ The repository root is the skill directory.
 | :--- | :--- |
 | [SKILL.md](SKILL.md) | Skill instructions and discovery description |
 | [README.zh-CN.md](README.zh-CN.md) | 中文安装与使用说明 |
-| [CHANGELOG.md](CHANGELOG.md) | Version and packaging history |
+| [CHANGELOG.md](CHANGELOG.md) | Version and documentation history |
 | [LICENSE](LICENSE) | MIT license |
 | [assets/](assets/) | README artwork and THROVIA brand assets |
 
 ## Save, share feedback, or follow
 
-- **Keep the skill handy.** Star this repository if you want to find it again.
-- **Tell us what happened when you used it.** What did it catch—or ask again unnecessarily? [Open an issue](https://github.com/THROVIA/Task_Brief/issues) with a short, anonymized excerpt. Include the client/model, how you invoked the skill, and what changed in your next step. If you used it again on another task, tell us why; if you stopped using it, that is useful too.
-- **Follow the thinking behind Task Brief.** Follow [Brenda Shi on X](https://x.com/brenda_50555) for human–AI collaboration and product practice. Task Brief is a THROVIA project.
-
-Found a useful moment worth sharing? Include the original request, the key response, and the decision that followed. Remove private information and label edits or paraphrases; keep claims tied to what the conversation actually shows.
+- **Save the tool:** star this repository to find it again.
+- **Share your experience:** [open an issue](https://github.com/THROVIA/Task_Brief/issues) about what it caught or asked again unnecessarily. A short anonymized excerpt, your client/model, and what changed in your next step are enough. Reasons for using it again—or stopping—are welcome too.
+- **Follow the work behind it:** follow [Brenda Shi on X](https://x.com/brenda_50555) for human–AI collaboration, product design, and observations from using the tools.
 
 ---
 
@@ -151,6 +158,6 @@ Found a useful moment worth sharing? Include the original request, the key respo
 
 Created by **Brenda Shi · THROVIA**. Published by **上海未见之地科技有限公司**.
 
-AI-assisted preparation; human-directed design and release decisions.
+AI-assisted preparation, human-directed design and release decisions.
 
 Copyright (c) 2026 Brenda Shi · THROVIA. Licensed under the [MIT License](LICENSE).
