@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/task-brief-header.svg" alt="Task Brief — Clarify what needs solving before complex work begins" width="100%">
+  <img src="assets/task-brief-header.png" alt="Task Brief — Clarify what needs solving before complex work begins" width="100%">
 </p>
 
 <p align="center">
@@ -143,8 +143,9 @@ The repository root is the skill directory.
 | [SKILL.md](SKILL.md) | Skill instructions and discovery description |
 | [README.zh-CN.md](README.zh-CN.md) | 中文安装与使用说明 |
 | [CHANGELOG.md](CHANGELOG.md) | Version and documentation history |
-| [LICENSE](LICENSE) | MIT license |
-| [assets/](assets/) | README artwork and THROVIA brand assets |
+| [LICENSE](LICENSE) | MIT license for skill instructions and text documentation |
+| [BRAND_USAGE.md](BRAND_USAGE.md) | Separate terms for brand artwork and use of brand identifiers |
+| [assets/](assets/) | PNG display images; see the brand usage terms |
 
 ## Save, share feedback, or follow
 
@@ -154,10 +155,10 @@ The repository root is the skill directory.
 
 ---
 
-<img src="assets/throvia-lockup.svg" alt="未见之地 · THROVIA" width="200">
+<img src="assets/throvia-lockup.png" alt="未见之地 · THROVIA" width="200">
 
 Created by **Brenda Shi · THROVIA**. Published by **上海未见之地科技有限公司**.
 
 AI-assisted preparation, human-directed design and release decisions.
 
-Copyright (c) 2026 Brenda Shi · THROVIA. Licensed under the [MIT License](LICENSE).
+Copyright (c) 2026 Brenda Shi · THROVIA. Skill instructions and text documentation are licensed under the [MIT License](LICENSE). Brand artwork is provided separately under the [brand usage terms](BRAND_USAGE.md); the MIT license does not grant official endorsement or permission to present your work as a THROVIA product. These terms do not revoke rights already validly granted for earlier copies.

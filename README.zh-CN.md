@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/task-brief-header.svg" alt="Task Brief · 开工前对齐 — 复杂任务开始前，先把问题说清楚" width="100%">
+  <img src="assets/task-brief-header.png" alt="Task Brief · 开工前对齐 — 复杂任务开始前，先把问题说清楚" width="100%">
 </p>
 
 <p align="center">
@@ -143,8 +143,9 @@ npx skills add THROVIA/Task_Brief --skill task-brief -a claude-code -g
 | [SKILL.md](SKILL.md) | 技能指令与发现描述 |
 | [README.md](README.md) | 英文安装与使用说明 |
 | [CHANGELOG.md](CHANGELOG.md) | 版本与文档修订记录 |
-| [LICENSE](LICENSE) | MIT 许可证 |
-| [assets/](assets/) | README 视觉素材与 THROVIA 品牌资产 |
+| [LICENSE](LICENSE) | 技能指令与文字文档的 MIT 许可证 |
+| [BRAND_USAGE.md](BRAND_USAGE.md) | 品牌图片及品牌标识使用说明 |
+| [assets/](assets/) | PNG 展示图片，适用单独的品牌使用说明 |
 
 ## 收藏、反馈与关注
 
@@ -154,10 +155,10 @@ npx skills add THROVIA/Task_Brief --skill task-brief -a claude-code -g
 
 ---
 
-<img src="assets/throvia-lockup.svg" alt="未见之地 · THROVIA" width="200">
+<img src="assets/throvia-lockup.png" alt="未见之地 · THROVIA" width="200">
 
 创作者：**Brenda Shi · THROVIA**。发布方：**上海未见之地科技有限公司**。
 
 AI 辅助准备；设计与发布决策由人主导。
 
-Copyright (c) 2026 Brenda Shi · THROVIA。采用 [MIT 许可证](LICENSE)。
+Copyright (c) 2026 Brenda Shi · THROVIA。技能指令与文字文档采用 [MIT 许可证](LICENSE)。品牌图片单独适用[品牌使用说明](BRAND_USAGE.md)；MIT 授权不代表官方背书，也不表示可以将自己的作品冒称为 THROVIA 产品。该说明不撤销此前已有效授予的权利。

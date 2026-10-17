@@ -66,3 +66,15 @@ This date records the packaging revision, not a GitHub release event. The skill 
 文档修订 R5：明确跨工具定位，补齐 Codex 与 Claude Code 的安装和调用入口；前置入职指南示例，增补分析场景，历史案例后移并作为方法来源；同步首页文案与横幅。技能正文、许可证和技能版本保持不变。
 
 This date records preparation of the documentation revision, not a GitHub release event.
+
+### Documentation revision R6 — 2026-10-17
+
+- Replaced README SVG artwork with PNG display images, preserving the layout and brand presentation.
+- Removed the three SVG originals from the current distribution; private originals are retained outside the repository. Git history is unchanged.
+- Added bilingual brand usage terms separating brand artwork from MIT-licensed skill instructions and text documentation, while preserving previously granted rights.
+- Updated download packaging to include PNGs and the brand usage notice.
+- Skill instructions, the MIT license text, copyright attribution, and skill version 1.0.0 remain unchanged.
+
+文档修订 R6：README 改用 PNG 展示图，三个 SVG 原稿移出当前分发并在仓库外私有留存；补充中英品牌使用说明，区分技能与文字文档的 MIT 授权及品牌素材使用范围，不撤销既有有效授权。同步下载包；Git 历史不重写，技能正文、MIT 许可文本、署名与技能版本保持不变。
+
+This date records the documentation revision, not a GitHub release event.
