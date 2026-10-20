@@ -78,3 +78,12 @@ This date records preparation of the documentation revision, not a GitHub releas
 文档修订 R6：README 改用 PNG 展示图，三个 SVG 原稿移出当前分发并在仓库外私有留存；补充中英品牌使用说明，区分技能与文字文档的 MIT 授权及品牌素材使用范围，不撤销既有有效授权。同步下载包；Git 历史不重写，技能正文、MIT 许可文本、署名与技能版本保持不变。
 
 This date records the documentation revision, not a GitHub release event.
+
+### Documentation revision R7 — 2026-10-20
+
+- Published the approved bilingual README structure, centered on AI sharing responsibility for defining the problem.
+- Added five explicit collaboration responsibilities, illustrated scenarios, cross-tool setup, and FAQ comparisons by emphasis.
+- Added English and Chinese PNG headers and silent illustrative demos with download links.
+- Preserved skill instructions, MIT license and version 1.0.0; demo dialogue is illustrative, not an experiment result.
+
+文档修订 R7：发布已确认的中英文页面内容，前置核心价值，补充跨工具安装、示范案例和 FAQ；新增双语 PNG 横幅和示意 Demo。技能正文、MIT 许可和版本 1.0.0 保持不变。

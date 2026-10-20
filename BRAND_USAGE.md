@@ -11,6 +11,7 @@ Task Brief 的技能指令（`SKILL.md`）与文字文档继续采用根目录 `
 本次分发中的品牌展示图片单独适用本说明，而非上述 MIT 授权：
 
 - `assets/task-brief-header.png`
+- `assets/task-brief-header-zh.png`
 - `assets/throvia-lockup.png`
 
 THROVIA、未见之地及其 Logo 用于标识品牌来源；Brenda Shi 的姓名用于标识作者。本说明不声称这些标识在任何特定地区已注册为商标。
@@ -42,6 +43,7 @@ The Task Brief skill instructions (`SKILL.md`) and text documentation remain und
 The brand display images in this distribution are provided separately under this notice, rather than the MIT grant above:
 
 - `assets/task-brief-header.png`
+- `assets/task-brief-header-zh.png`
 - `assets/throvia-lockup.png`
 
 THROVIA, 未见之地, and their logo identify the brand; Brenda Shi's name identifies the author. This notice makes no claim that any identifier is registered as a trademark in a particular jurisdiction.
