@@ -33,9 +33,9 @@ AI 也要承担定义问题的责任：主动发现盲点、检查提出的做�
 
 ## 从“做 PPT”，到确定这次汇报要促成什么
 
-[![观看 36 秒中文 Demo](assets/demo/task-brief-zh.png)](https://github.com/THROVIA/Task_Brief/raw/refs/heads/main/assets/demo/task-brief-zh.mp4)
+![四轮示意对话：从做项目汇报 PPT，到请领导决定任务优先级](assets/demo/task-brief-zh.gif)
 
-示意对话 · 中文 · 无配音。点击封面打开 MP4。
+循环动图 · 中文 · 示意对话，非真实运行录屏。下方文字版可逐句阅读。[下载完整 MP4（36 秒）](https://github.com/THROVIA/Task_Brief/raw/refs/heads/main/assets/demo/task-brief-zh.mp4)
 
 <details open>
 <summary>阅读四句示意对话</summary>

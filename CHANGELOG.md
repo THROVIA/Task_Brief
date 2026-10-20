@@ -87,3 +87,11 @@ This date records the documentation revision, not a GitHub release event.
 - Preserved skill instructions, MIT license and version 1.0.0; demo dialogue is illustrative, not an experiment result.
 
 文档修订 R7：发布已确认的中英文页面内容，前置核心价值，补充跨工具安装、示范案例和 FAQ；新增双语 PNG 横幅和示意 Demo。技能正文、MIT 许可和版本 1.0.0 保持不变。
+
+### Documentation revision R8 — 2026-10-20
+
+- Replaced linked MP4 covers with inline, looping GIFs in both READMEs so the four-turn illustrative dialogue is visible without downloading a video.
+- Kept the full MP4 as a clearly labeled optional download and retained the readable dialogue transcript.
+- Skill instructions and approved demo dialogue remain unchanged.
+
+文档修订 R8：中英文 README 改为页内循环动图，保留四轮示意对话；完整 MP4 单独标注为下载入口，文字版继续保留。技能规则与已确认的示例对话不变。

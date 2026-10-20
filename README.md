@@ -33,9 +33,9 @@ AI should share responsibility for defining the problem: proactively surface bli
 
 ## From “make a deck” to “help leadership make a decision”
 
-[![Watch the 48-second English demo](assets/demo/task-brief-en.png)](https://github.com/THROVIA/Task_Brief/raw/refs/heads/main/assets/demo/task-brief-en.mp4)
+![Four-turn illustrative dialogue: from a project update deck to a decision on task priority](assets/demo/task-brief-en.gif)
 
-Illustrative dialogue · English · Silent. Click the image to open the MP4.
+Looping GIF · English · Illustrative dialogue, not a recorded run. Read the dialogue below at your own pace. [Download the full MP4 (48 seconds)](https://github.com/THROVIA/Task_Brief/raw/refs/heads/main/assets/demo/task-brief-en.mp4)
 
 <details open>
 <summary>Read the illustrative dialogue in English</summary>
